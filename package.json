@@ -2,8 +2,9 @@
   "name": "todo-express",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "todo-app/server.js",
   "scripts": {
+    "start": "nodemon app/server.js -w app/ -e js -i node_modules/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,17 @@
   "bugs": {
     "url": "https://github.com/dez02/todo-express/issues"
   },
-  "homepage": "https://github.com/dez02/todo-express#readme"
+  "homepage": "https://github.com/dez02/todo-express#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongoose": "^4.13.3",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.12.1",
+    "pug": "^2.0.0-rc.4"
+  },
+  "devDependencies": {
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  }
 }
